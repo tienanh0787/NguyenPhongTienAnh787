@@ -1,0 +1,18 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
+
+namespace NguyenPhongTienAnh787.Models
+{
+    public class PersonNPTA787
+    {
+        [Key]
+        public string NPTAId { get; set; }
+        [Required(ErrorMessage="Please enter product name.")]
+         [Display(Name = "NPTA")]
+        public string NPTAName { get; set; }
+        public string NPTAGender { get; set; }
+    }
+}
