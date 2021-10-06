@@ -10,8 +10,7 @@ namespace NguyenPhongTienAnh787.Models
     {
         [Key]
         public string NPTAId { get; set; }
-        [Required(ErrorMessage="Please enter product name.")]
-         [Display(Name = "NPTA")]
+         [Display(Name = "Ten")]
         public string NPTAName { get; set; }
         public string NPTAGender { get; set; }
     }
